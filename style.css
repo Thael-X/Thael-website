@@ -1,0 +1,278 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* HALAMAN UTAMA */
+html,
+body {
+    background-color: #000;
+    color: white;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* NAVBAR */
+nav {
+    background: #1e3a8a;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #facc15;
+}
+
+/* SECTION */
+section {
+    min-height: 100vh;
+    padding: 80px 20px;
+    background-color: #000;
+}
+
+/* CARD */
+.card {
+    max-width: 900px;
+    margin: auto;
+    background: #111;
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 150, 255, 0.2);
+}
+
+/* TEKS */
+h1 {
+    color: white;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #4da6ff;
+    margin-bottom: 15px;
+}
+
+p,
+li,
+td,
+a {
+    color: white;
+}
+
+/* GAMBAR UTAMA */
+.welcome-img {
+    width: 300px;
+    max-width: 100%;
+    display: block;
+    margin: 20px auto;
+    border-radius: 15px;
+}
+
+/* FOTO PROFIL BULAT */
+.profile-img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+    border: 4px solid #4da6ff;
+}
+
+/* TABEL BIODATA */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table td {
+    padding: 10px;
+    border-bottom: 1px solid #333;
+}
+
+/* LIST */
+ul {
+    padding-left: 25px;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #1e3a8a;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.btn:hover {
+    background: #2563eb;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    background: #1e3a8a;
+    color: white;
+    padding: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    .welcome-img {
+        width: 220px;
+    }
+}/* GRID */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* CARD ITEM */
+
+.grid-item {
+    background: #1a1a1a;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.grid-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 15px #2563eb;
+}
+
+/* GAMBAR */
+
+.grid-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* JUDUL */
+
+.grid-item h3 {
+    margin-top: 10px;
+    color: white;
+}
+
+/* TOMBOL GAME */
+
+.game-link {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 20px;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.game-link:hover {
+    background: #1e3a8a;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+/* MUSIC BUTTON */
+
+.music-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #1DB954;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.music-btn:hover {
+    background: #169c46;
+}
+
+/* MUSIC GRID */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.grid-item {
+    background: #1a1a1a;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.grid-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px #2563eb;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.grid-item h3 {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
