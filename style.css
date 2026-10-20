@@ -759,3 +759,96 @@ section {
 #music{
     position: relative;
 }
+
+/* MOBILE PHONE */
+
+@media screen and (max-width: 768px){
+
+    /* Navbar */
+
+    nav ul{
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    /* Home */
+
+    h1{
+        font-size: 32px;
+        text-align: center;
+    }
+
+    p{
+        font-size: 18px;
+    }
+
+    /* Hilangkan karakter kiri kanan */
+
+    .side-character-left,
+    .side-character-right{
+        display:none;
+    }
+
+    /* Hilangkan speech bubble */
+
+    .speech-left,
+    .speech-right{
+        display:none;
+    }
+
+    /* About me */
+
+    .about-content{
+        flex-direction: column;
+        text-align:center;
+        gap:20px;
+    }
+
+    .about-text{
+        width:100%;
+    }
+
+    .about-character{
+        width:100%;
+    }
+
+    .about-character img{
+        width:250px;
+    }
+
+    /* Music Video */
+
+    .music-video{
+        position:static !important;
+
+        width:100%;
+
+        margin:20px auto;
+    }
+
+    .music-video video{
+        width:100%;
+    }
+
+    /* Grid menjadi 1 kolom */
+
+    .grid-container{
+        grid-template-columns:1fr !important;
+    }
+
+    /* Card */
+
+    .card{
+        width:95%;
+        margin:auto;
+        padding:20px;
+    }
+
+    /* Character Card */
+
+    .grid-item img{
+        width:100%;
+        height:auto;
+    }
+
+}
