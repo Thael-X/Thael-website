@@ -9,8 +9,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
 
+<body>
+<!-- Loading Screen -->
+<div id="loading-screen">
+
+    <div class="void-stars"></div>
+
+    <div class="void-portal">
+        <div class="void-ring ring1"></div>
+        <div class="void-ring ring2"></div>
+        <div class="void-ring ring3"></div>
+        <div class="void-core"></div>
+    </div>
+
+    <h2 class="void-title" data-text="ENTERING THE VOID">ENTERING THE VOID</h2>
+    <p class="void-status" id="loaderStatus">Awakening the Void God...</p>
+
+    <div class="loader-bar">
+        <div class="loader-bar-fill" id="loaderFill"></div>
+    </div>
+    <p class="loader-percent" id="loaderPercent">0%</p>
+
+</div>
     <!-- Navbar -->
     <nav>
         <ul>
@@ -32,7 +53,7 @@
                 I mainly will be inactive most of the time because of school and work. If you need anything expect me responding late.
             </p>
 
-            <img src="foto.jpg" alt="Foto Profil" class="welcome-img">
+            <img src="images/foto.jpg" alt="Foto Profil" class="welcome-img" id="mainLogo">
 
         </div>
      <div class="side-character-left">
@@ -41,7 +62,7 @@
         RAZE. THE. VOID. GOD. FOR. THE. VOID. GOD.
     </div>
 
-    <img src="left-character.png" alt="Left Character">
+    <img src="images/left-character.png" alt="Left Character">
 
 </div>
 
@@ -51,34 +72,55 @@
         Do you seriously mean to break the Sisyphe System?
     </div>
 
-    <img src="right-character.png" alt="Right Character">
+    <img src="images/right-character.png" alt="Right Character">
 
 </div>
     </section>
 
     <!-- About Me -->
     <section id="about">
+    
     <div class="card about-card">
 
         <div class="about-content">
 
             <div class="about-text">
 
-                <h2>About Me</h2>
+    <h2>About Me</h2>
 
-                <p><strong>Name:</strong> Thael</p>
-                <p><strong>Age:</strong> 17 Years</p>
-                <p><strong>Hobby:</strong> Drawing, Playing Games, Listening to Music</p>
+    <p class="about-tagline">"The wave sound lonely..."</p>
 
-            </div>
+    <p><strong>Name:</strong> Thael</p>
+    <p><strong>Age:</strong> 17 Years</p>
+    <p><strong>Hobby:</strong></p>
 
-            <div class="about-character">
-                <img src="about-character.png" alt="Favorite Character">
-            </div>
-
-        </div>
-
+    <div class="hobby-chips">
+        <span>🎨 Drawing</span>
+        <span>🎮 Playing Games</span>
+        <span>🎧 Listening to Music</span>
     </div>
+
+    <div class="status-badge">
+        <span class="status-dot"></span>
+        Busy: school &amp; work
+    </div>
+
+</div>
+         <div class="about-character">
+
+    <div class="about-stars">
+        <span class="about-star as1">★</span>
+        <span class="about-star as2">★</span>
+        <span class="about-star as3">★</span>
+        <span class="about-star as4">★</span>
+        <span class="about-star as5">★</span>
+    </div>
+
+    <img src="images/about-character.png" alt="Favorite Character">
+
+    <button id="askBtn" class="ask-btn">💬 Ask Me Anything</button>
+
+</div>
 </section>
 
     <!-- Favorite Music -->
@@ -102,7 +144,7 @@
 
             <!-- Music 1 -->
             <div class="grid-item">
-                <img src="music1.jpg" alt="Music 1">
+                <img src="images/music1.jpg" alt="Music 1">
 
                 <h3>Bury The Light - Casey Edwards</h3>
 
@@ -115,7 +157,8 @@
 
             <!-- Music 2 -->
             <div class="grid-item">
-                <img src="music2.jpg" alt="Music 2">
+                <img src="images/music2.jpg" alt="Music 2">
+
 
                 <h3>From a Place of Love - Mili</h3>
 
@@ -128,7 +171,7 @@
 
             <!-- Music 3 -->
             <div class="grid-item">
-                <img src="music3.jpg" alt="Music 3">
+                <img src="images/music3.jpg" alt="Music 3">
 
                 <h3>Fairytale - Alexander Rybak</h3>
 
@@ -141,7 +184,7 @@
 
             <!-- Music 4 -->
             <div class="grid-item">
-                <img src="music4.jpg" alt="Music 4">
+                <img src="images/music4.jpg" alt="Music 4">
 
                 <h3>DEVILS NEVER CRY (dmc3) - Capcom sound team</h3>
 
@@ -154,7 +197,8 @@
 
             <!-- Music 5 -->
             <div class="grid-item">
-                <img src="music5.jpg" alt="Music 5">
+                <img src="images/music5.jpg" alt="Music 5">
+
 
                 <h3>Hymn for the Weekend - Coldplay</h3>
 
@@ -167,7 +211,7 @@
 
             <!-- Music 6 -->
             <div class="grid-item">
-                <img src="music6.jpg" alt="Music 6">
+                <img src="images/music6.jpg" alt="Music 6">
 
                 <h3>Children of the City - Mili</h3>
 
@@ -189,37 +233,37 @@
 
         <div class="grid-container">
 
-            <div class="grid-item maurice-card">
-                <img src="char1.jpg" alt="Character 1">
-                <h3>Maurice - Ncorp</h3>
-            </div>
+    <div class="grid-item maurice-card" data-char="maurice">
+        <img src="images/char1.jpg" alt="Character 1">
+        <h3>Maurice - Ncorp</h3>
+    </div>
 
-            <div class="grid-item yan-card">
-                <img src="char2.jpg" alt="Character 2">
-                <h3>Yan Vismok - The Index</h3>
-            </div>
+    <div class="grid-item yan-card" data-char="yan">
+        <img src="images/char2.jpg" alt="Character 2">
+        <h3>Yan Vismok - The Index</h3>
+    </div>
 
-            <div class="grid-item vergil-card">
-                <img src="char3.jpg" alt="Character 3">
-                <h3>Vergil - Devil May Cry</h3>
-            </div>
+    <div class="grid-item vergil-card" data-char="vergil">
+        <img src="images/char3.jpg" alt="Character 3">
+        <h3>Vergil - Devil May Cry</h3>
+    </div>
 
-            <div class="grid-item thael-card">
-                <img src="char4.jpg" alt="Character 4">
-                <h3>Thael - TBBF</h3>
-            </div>
+    <div class="grid-item thael-card" data-char="thael">
+        <img src="images/char4.jpg" alt="Character 4">
+        <h3>Thael - TBBF</h3>
+    </div>
 
-            <div class="grid-item ennard-card">
-                <img src="char5.jpg" alt="Character 5">
-                <h3>Ennard - FNAF</h3>
-            </div>
+    <div class="grid-item ennard-card" data-char="ennard">
+        <img src="images/char5.jpg" alt="Character 5">
+        <h3>Ennard - FNAF</h3>
+    </div>
 
-            <div class="grid-item penumbra-card">
-                <img src="char6.jpg" alt="Character 6">
-                <h3>Penumbra - TDS</h3>
-            </div>
+    <div class="grid-item penumbra-card" data-char="penumbra">
+        <img src="images/char6.jpg" alt="Character 6">
+        <h3>Penumbra - TDS</h3>
+    </div>
 
-        </div>
+</div>
 
     </div>
 
@@ -232,7 +276,7 @@
         <div class="grid-container">
 
             <div class="grid-item">
-                <img src="game1.jpg" alt="Roblox">
+                <img src="images/game1.jpg" alt="Roblox">
 
                 <h3>Roblox</h3>
 
@@ -244,7 +288,7 @@
             </div>
 
             <div class="grid-item">
-                <img src="game2.jpg" alt="Limbus Company">
+                <img src="images/game2.jpg" alt="Limbus Company">
 
                 <h3>LimbusCompany</h3>
 
@@ -256,9 +300,9 @@
             </div>
 
             <div class="grid-item">
-                <img src="game3.jpg" alt="Mobile Legends">
+                <img src="images/game3.jpg" alt="Mobile Legends">
 
-                <h3>Mobile Legends</h3>
+                <h3>Mobile Legends: Bang Bang</h3>
 
                 <a class="game-link"
                    href="https://play.google.com/store/apps/details?id=com.mobile.legends&hl=en_ZA&gl=AR"
@@ -273,8 +317,119 @@
 </section>
 
     <footer>
-        © 2026 Thael Website
+        © 2026 Nadhif Website
     </footer>
+
+    <script src="script.js"></script>
+
+<div id="secret-page">
+
+    <div class="secret-stars">
+
+    <span class="star s1">★</span>
+    <span class="star s2">★</span>
+    <span class="star s3">★</span>
+    <span class="star s4">★</span>
+    <span class="star s5">★</span>
+    <span class="star s6">★</span>
+
+</div>
+
+    <div class="secret-gallery">
+
+        <img src="images/photo1.jpg" class="secret-photo p1">
+        <img src="images/photo2.jpg" class="secret-photo p2">
+        <img src="images/photo3.jpg" class="secret-photo p3">
+        <img src="images/photo4.jpg" class="secret-photo p4">
+        <img src="images/photo5.jpg" class="secret-photo p5">
+        <img src="images/photo6.jpg" class="secret-photo p6">
+
+    </div>
+<div class="secret-character-container">
+
+    <div class="secret-bubble">
+
+        meow meow meow meow meow
+
+    </div>
+
+    <img src="images/secret-character.png"
+         class="secret-character">
+
+</div>
+
+    <div class="secret-content">
+
+    
+        <img src="images/nothing.jpg" alt="special-cases">
+    
+
+        <h1>Taylor the Subspace</h1>
+
+        <p>
+            "Love is in the air? WRONG! GAS LEAK"
+        </p>
+
+        <button id="exit-secret">
+            Exit Secret Route
+        </button>
+
+    </div>
+
+</div>
+<!-- Ask Me Anything -->
+<div id="ask-modal">
+    <div class="ask-box">
+        <button type="button" id="askClose" class="ask-close">✕</button>
+
+        <iframe id="askFrame"
+                data-src="https://docs.google.com/forms/d/e/1FAIpQLSeja9Aukwfxcs8q3yhdUXvA_Z9QIbvERCUoFUFba1gIfJcLWA/viewform?embedded=true"
+                title="Ask me anything">
+            Loading...
+        </iframe>
+
+        <a class="ask-fallback"
+           href="https://forms.gle/yvH7jP5otT5AuSzp7"
+           target="_blank">
+            Form tidak muncul? Buka di tab baru
+        </a>
+    </div>
+</div>
+<!-- Character Modal -->
+<div id="char-modal">
+    <div class="char-box">
+
+        <button type="button" id="charClose" class="char-close">✕</button>
+
+        <div class="char-layout">
+
+            <div class="char-photo">
+                <img id="charImg" src="" alt="">
+            </div>
+
+            <div class="char-info">
+                <h3 id="charName"></h3>
+                <p class="char-series" id="charSeries"></p>
+
+                <h4>Description</h4>
+                <p id="charDesc"></p>
+
+                <h4>Lore</h4>
+                <p id="charLore" class="char-lore"></p>
+
+                <div class="char-music" id="charMusic">
+                    <button type="button" id="charPlay" class="char-play">▶ Play Theme</button>
+                    <span id="charMusicTitle"></span>
+                </div>
+                <p id="charMusicError" class="char-music-error"></p>
+            </div>
+
+        </div>
+
+        <audio id="charAudio" preload="none"></audio>
+
+    </div>
+</div>
 
 </body>
 
